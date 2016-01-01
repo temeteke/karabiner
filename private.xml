@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<root>
+	<list>
+		<item>
+			<name>LeaveInsMode with EISUU(Terminal)</name>
+			<identifier>private.app_terminal_esc_with_eisuu</identifier>
+			<only>TERMINAL</only>
+			<autogen>--KeyToKey-- KeyCode::ESCAPE, KeyCode::ESCAPE, KeyCode::JIS_EISUU</autogen>
+			<autogen>--KeyToKey-- KeyCode::C, VK_CONTROL, KeyCode::C, VK_CONTROL, KeyCode::JIS_EISUU</autogen>
+		</item>
+		<item>
+			<name>Shift to EISUU/KANA</name>
+			<identifier>remap.shift_oneshot</identifier>
+			<autogen>--KeyOverlaidModifier-- KeyCode::SHIFT_L, KeyCode::SHIFT_L, KeyCode::JIS_EISUU</autogen>
+			<autogen>--KeyOverlaidModifier-- KeyCode::SHIFT_R, KeyCode::SHIFT_R, KeyCode::JIS_KANA</autogen>
+		</item>
+		<item>
+			<name>EISUU/KANA to Shift</name>
+			<identifier>remap.eisuu_kana_shift</identifier>
+			<autogen>--KeyOverlaidModifier-- KeyCode::JIS_EISUU, KeyCode::SHIFT_L, KeyCode::JIS_EISUU</autogen>
+			<autogen>--KeyOverlaidModifier-- KeyCode::JIS_KANA, KeyCode::SHIFT_R, KeyCode::JIS_KANA</autogen>
+		</item>
+		<item>
+			<name>With Space</name>
+			<identifier>remap.with_space</identifier>
+			<autogen>--KeyOverlaidModifier-- KeyCode::SPACE, KeyCode::VK_MODIFIER_EXTRA1, KeyCode::SPACE</autogen>
+			<autogen>--KeyToKey-- KeyCode::B, ModifierFlag::EXTRA1, KeyCode::SPACE</autogen>
+			<autogen>--KeyToKey-- KeyCode::H, ModifierFlag::EXTRA1, KeyCode::CURSOR_LEFT</autogen>
+			<autogen>--KeyToKey-- KeyCode::J, ModifierFlag::EXTRA1, KeyCode::CURSOR_DOWN</autogen>
+			<autogen>--KeyToKey-- KeyCode::K, ModifierFlag::EXTRA1, KeyCode::CURSOR_UP</autogen>
+			<autogen>--KeyToKey-- KeyCode::L, ModifierFlag::EXTRA1, KeyCode::CURSOR_RIGHT</autogen>
+			<autogen>--KeyToKey-- KeyCode::E, ModifierFlag::EXTRA1, KeyCode::CURSOR_UP</autogen>
+			<autogen>--KeyToKey-- KeyCode::S, ModifierFlag::EXTRA1, KeyCode::CURSOR_LEFT</autogen>
+			<autogen>--KeyToKey-- KeyCode::D, ModifierFlag::EXTRA1, KeyCode::CURSOR_DOWN</autogen>
+			<autogen>--KeyToKey-- KeyCode::F, ModifierFlag::EXTRA1, KeyCode::CURSOR_RIGHT</autogen>
+			<autogen>--KeyToKey-- KeyCode::P, ModifierFlag::EXTRA1, KeyCode::RETURN</autogen>
+			<autogen>--KeyToKey-- KeyCode::Q, ModifierFlag::EXTRA1, KeyCode::ESCAPE</autogen>
+			<autogen>--KeyToKey-- KeyCode::U, ModifierFlag::EXTRA1, KeyCode::HOME</autogen>
+			<autogen>--KeyToKey-- KeyCode::O, ModifierFlag::EXTRA1, KeyCode::END</autogen>
+			<autogen>--KeyToKey-- KeyCode::N, ModifierFlag::EXTRA1, KeyCode::END</autogen>
+			<autogen>--KeyToKey-- KeyCode::TAB, ModifierFlag::EXTRA1, KeyCode::TAB, ModifierFlag::COMMAND_L</autogen>
+			<autogen>--PointingButtonToKey-- PointingButton::LEFT, ModifierFlag::EXTRA1, KeyCode::VK_MOUSEKEY_BUTTON_LEFT, ModifierFlag::COMMAND_L</autogen>
+		</item>
+	</list>
+</root>
